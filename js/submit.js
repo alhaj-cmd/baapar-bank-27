@@ -11,9 +11,13 @@ document.getElementById('btn-submit').addEventListener('click',function (){
     // console.log(emailValue, passwordValue);
     // step-4 verify emailField && passwordField and check wheather valid or not
     if(emailValue ==='alhazsarkar55@gmail.com' && passwordValue ==='alhaj' ){
-       console.log('user is valid')
+        // another ways to file change
+        // document.getElementById("btn-submit").onclick = function () {
+        //     location.href = "http://127.0.0.1:5500/bank.html";
+        // };
+        window.location.href = 'bank.html';
     }
     else{
-       console.log('user is not valid')
+       alert('user is not valid.. Please !! correct your email & password')
     }
 })
